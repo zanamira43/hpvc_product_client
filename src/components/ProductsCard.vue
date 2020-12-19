@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-white mb-3 rounded-lg">
+  <div class="bg-gray-100 mb-3 rounded-lg h-auto">
     <!-- Image  -->
     <div>
       <img
-        :src="product?.photo"
+        v-lazy="product?.photo"
         :alt="product?.title"
-        class="object-contain w-full h-56 overflow-hidden"
+        class="w-full max-h-60 overflow-hidden"
       />
     </div>
 

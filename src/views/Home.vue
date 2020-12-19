@@ -1,6 +1,10 @@
 <template>
-  <div class="grid md:grid-cols-5 md:gap-2 grid-cols-1">
-    <ProductsCard v-for="product in products" :key="product.id" :product="product" />
+  <div class="grid md:grid-cols-5 md:gap-2 grid-cols-1 gap-1">
+    <ProductsCard
+      v-for="product in products.slice().reverse()"
+      :key="product.id"
+      :product="product"
+    />
   </div>
 
   <div class="mx-auto text-center p-6 bg-gray-800 text-gray-100" v-if="showError">

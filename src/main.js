@@ -4,6 +4,7 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import axios from 'axios'
+import lazyPlugin from 'vue3-lazy'
 import './assets/css/main.css'
 
 import Navbar from './components/Navbar.vue'
@@ -15,6 +16,7 @@ const app = createApp(App)
 
 app.component('navbar', Navbar)
 app.component('ProductsCard', ProductsCard)
+app.use(lazyPlugin, {})
 
 
 app.use(store).use(router).mount('#app')

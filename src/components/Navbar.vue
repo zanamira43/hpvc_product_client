@@ -1,8 +1,8 @@
 <template>
-  <header class="container bg-gray-900 mx-auto px-2 py-2 mb-5">
-    <div class="flex items-center justify-between">
+  <header class="container bg-gray-900 px-2 py-2 mb-5 w-screen">
+    <div class="flex flex-row items-center justify-between flex-wrap">
       <!-- right -->
-      <div class="flex justify-end">
+      <div class="flex justify-end flex-shrink-0">
         <!-- cog icon -->
         <svg
           class="w-8 h-8 text-white mr-2"
